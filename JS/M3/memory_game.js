@@ -57,7 +57,7 @@ function checkMatch() {
 }
 
 function startGame() {
-    let timeLeft = 30;
+    let timeLeft = 60;
     startbtn.disabled = true;
     score = 0; // Reset score to zero
     scoreElement.textContent = `Score: ${score}`;
@@ -77,7 +77,7 @@ function startGameTimer(timeLeft) {
 
         if (timeLeft === 0) {
             clearInterval(gameInterval);
-            let timeLeft = 30;
+            let timeLeft = 60;
             alert('Game Over!');
             startbtn.disabled = false;
         }
